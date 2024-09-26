@@ -11,11 +11,41 @@
     <!-- Common styles -->
     <link rel="stylesheet" href="./Styles/common.css">
     <link rel="stylesheet" href="./Styles/index_style.css">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
-    
+ 
 
+<nav>
+    <div id="nav-logo-container">
+        <img src="./Assets/Images/logo-transparent.png" alt="Code byte logo">
+    </div>
+    <div id="nav-icon-container">
+        <button id="nav-toggle-btn" onclick="toggleNavigation()">
+            <i class='bx bx-menu' id="nav-toggle-icon"></i>
+        </button>
+    </div>
+    <div id="nav-url-container" class="flex_hidden">
+        <a href="#">Learn</a>
+        <a href="#">Code</a>
+        <a href="#">Compete</a>
+        <div id="nav-login-container">
+            <button class="btn">Login</button>
+            <button class="btn">Signup</button>
+        </div>
+        <div id="nav-login-extra">
+            <p>or</p>
+            <button class="nav_btn_extra"><i class='bx bxl-google' ></i></button>
+            <button class="nav_btn_extra"><i class='bx bxl-linkedin-square' ></i></button>
+            <button class="nav_btn_extra"><i class='bx bxl-github' ></i></button>
+        </div>
+    </div>
+</nav>
+
+
+<script src="./Scripts/index_script.js"></script>
 
 </body>
 </html>
