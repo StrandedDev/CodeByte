@@ -1,0 +1,224 @@
+
+/*========== Navbar ==========*/
+
+nav{
+    background-color: var(--full-white);
+    height: 80px;
+    width: 100vw;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+nav > #nav-logo-container > img{
+    height: 60px;
+}
+
+nav > #nav-icon-container > #nav-toggle-btn{
+    background-color: transparent;
+}
+
+nav > #nav-icon-container > #nav-toggle-btn > i{
+    font-size: 2.7rem;
+}
+
+
+nav > #nav-url-container{
+    background-color: var(--full-white);
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    height: calc(100vh - 80px);
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 99;
+}
+
+
+nav > #nav-url-container > a{
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    transition: background-color 0.2s ease-out;
+    border-radius: 5px;
+    color: var(--dark-font-gray);
+}
+
+nav > #nav-url-container > a:hover{
+    background-color: var(--dark-gray);
+    color: var(--black);
+}
+
+nav #nav-login-container{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+nav #nav-login-container > .btn{
+    padding: 12px 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: var(--dark-gray);
+    transition: background-color 0.2s ease-out;
+}
+
+
+nav #nav-login-container > .btn:hover{
+    background-color: var(--light-gray);
+}
+
+nav #nav-login-container > .btn:first-child{
+    background-color: var(--black);
+    color: var(--white);
+    transition: box-shadow 0.2s ease-out;
+    box-shadow: 0 5px 3px -1px rgba(0,0,0,0.4);
+}
+
+
+nav #nav-login-container > .btn:first-child:hover{
+    box-shadow: none;
+}
+
+
+nav #nav-url-container #nav-login-extra{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+nav #nav-url-container #nav-login-extra > p{
+    width: 100%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-font-gray);
+}
+
+nav #nav-url-container #nav-login-extra > .nav_btn_extra{
+    color: var(--dark-font-gray);
+    transition: color 0.2s ease-out;
+    padding: 5px;
+}
+
+nav #nav-url-container #nav-login-extra > .nav_btn_extra > i{
+    font-size: 2.4rem;
+}
+
+nav #nav-url-container #nav-login-extra > .nav_btn_extra:hover{
+    color: var(--black);
+}
+
+
+/*========== Navbar ==========*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media (min-width: 1024px) {
+
+/* Navbar */
+
+    nav{
+        padding: 10px 20px;
+    }
+
+    nav > #nav-icon-container{
+        display: none;
+    }
+
+    nav > #nav-url-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: initial;
+        height: initial;
+        width: fit-content;
+        padding: 5px;
+    }
+
+    /* learn, code, compete links */
+    nav > #nav-url-container > a{
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    nav > #nav-url-container > #nav-login-container{
+        gap: 20px;
+        padding: initial;
+        margin: initial;
+        margin-left: 40px;
+    }
+    
+    /* login, sign up buttons */
+    nav > #nav-url-container > #nav-login-container > .btn{
+        padding: 8px 12px;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    nav > #nav-url-container > #nav-login-container > .btn:first-child{
+        box-shadow: 0 6px 3px -1px rgba(0,0,0,0.2);
+    }
+
+    nav > #nav-url-container > #nav-login-container > .btn:first-child:hover{
+        box-shadow: none;
+    }
+
+    nav > #nav-url-container > #nav-login-extra{
+        display: none;
+    }
+
+/* Navbar */
+
+
+
+
+
+
+
+
+
+
+
+}
+
