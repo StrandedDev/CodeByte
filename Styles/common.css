@@ -1,0 +1,61 @@
+/* Initial values */
+
+/* Local font - Roboto */
+
+@font-face {
+    font-family: roboto-regular;
+    src: url('../Assets/Fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: inter-regular;
+    src: url('../Assets/Fonts/Inter/Inter-VariableFont_opsz\,wght.ttf');
+}
+
+@font-face {
+    font-family: jetbrains-regular;
+    src: url('../Assets/Fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf');
+}
+
+
+
+/* External Fonts: Roboto. Inter, Jetbrains mono */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Pallete */
+
+:root{
+    --black: #18181b;
+    --white: #fafafa;
+    --full-white: #ffffff;
+    --full-black: #000000;
+    --light-gray: #f5f5f5;
+    --dark-gray: #e5e5e5;
+    --error-red: #f87171;
+    --success-green: #4ade80;
+    --info-blue: #22d3ee;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: var(--full-black);
+}
+
+input, textarea, button{
+    border: none;
+    outline: none;
+    background-color: var(--full-white);
+}
+
+li{
+    list-style: none;
+}
