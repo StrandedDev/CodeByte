@@ -57,7 +57,7 @@ nav > #nav-url-container > a{
     padding-left: 16px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: var(--text-base);
     transition: background-color 0.2s ease-out;
     border-radius: 5px;
     color: var(--dark-font-gray);
@@ -78,10 +78,10 @@ nav #nav-login-container{
 }
 
 nav #nav-login-container > .btn{
-    padding: 12px 60px;
+    padding: 12px 40px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: var(--text-sm);
     border-radius: 5px;
     background-color: var(--dark-gray);
     transition: background-color 0.2s ease-out;
@@ -92,7 +92,7 @@ nav #nav-login-container > .btn:hover{
     background-color: var(--light-gray);
 }
 
-nav #nav-login-container > .btn:first-child{
+nav #nav-login-container > .btn:last-child{
     background-color: var(--black);
     color: var(--white);
     transition: box-shadow 0.2s ease-out;
@@ -100,7 +100,7 @@ nav #nav-login-container > .btn:first-child{
 }
 
 
-nav #nav-login-container > .btn:first-child:hover{
+nav #nav-login-container > .btn:last-child:hover{
     box-shadow: none;
 }
 
@@ -144,14 +144,118 @@ nav #nav-url-container #nav-login-extra > .nav_btn_extra:hover{
 
 
 
+/*========== Hero section ==========*/
+
+header{
+    padding: 20px;
+    margin-top: 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header > h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    max-width: 500px;
+}
+
+header > p{
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text-sm);
+    color: var(--dark-font-gray);
+}
+
+header > #hero-form{
+    margin-top: 50px;
+    max-width: 500px;
+}
 
 
+#hero-form > div > input[type="email"]{
+    height: 40px;
+    width: 80%;
+    max-width: 450px;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text-base);
+    padding-left: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right: -5px;
+    background-color: var(--light-gray);
+}
 
+#hero-form > div > input[type="submit"]{
+    height: 40px;
+    width: 20%;
+    max-width: 120px;
+    font-size: var(--text-base);
+    font-family: 'Inter', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0;
+}
+
+header #hero-login-extra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#hero-login-extra > p{
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-font-gray);
+    margin: 0;
+    padding: 25px 0;
+    text-align: center;
+    width: 100%;
+    font-size: var(--text-sm);
+}
+
+#hero-login-extra > .nav_btn_extra{
+    background-color: transparent;
+    margin: 0 10px;
+}
+
+#hero-login-extra > .nav_btn_extra > i{
+    font-size: 2rem;
+    transition: color 0.2s ease-out;
+    color: var(--dark-font-gray);
+}
+
+#hero-login-extra > .nav_btn_extra > i:hover{
+    color: var(--light-font-gray);
+}
+
+#hero-img{
+    height: 260px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/*========== Hero section ==========*/
 
 
 
 
 /* Responsive */
+
+@media (min-width: 764px) {
+    
+    #hero-img{
+        position: absolute;
+        right: 50px;
+        bottom: 100px;
+        height: 400px;
+    }
+}
+
+
+
 
 @media (min-width: 1024px) {
 
@@ -178,7 +282,7 @@ nav #nav-url-container #nav-login-extra > .nav_btn_extra:hover{
 
     /* learn, code, compete links */
     nav > #nav-url-container > a{
-        font-size: 0.9rem;
+        font-size: var(--text-sm);
         padding: 8px 12px;
     }
 
@@ -192,15 +296,15 @@ nav #nav-url-container #nav-login-extra > .nav_btn_extra:hover{
     /* login, sign up buttons */
     nav > #nav-url-container > #nav-login-container > .btn{
         padding: 8px 12px;
-        font-size: 0.9rem;
+        font-size: var(--text-base);
         font-weight: 500;
     }
 
-    nav > #nav-url-container > #nav-login-container > .btn:first-child{
+    nav > #nav-url-container > #nav-login-container > .btn:last-child{
         box-shadow: 0 6px 3px -1px rgba(0,0,0,0.2);
     }
 
-    nav > #nav-url-container > #nav-login-container > .btn:first-child:hover{
+    nav > #nav-url-container > #nav-login-container > .btn:last-child:hover{
         box-shadow: none;
     }
 
@@ -211,7 +315,27 @@ nav #nav-url-container #nav-login-extra > .nav_btn_extra:hover{
 /* Navbar */
 
 
+/* Header */
 
+#hero-img{
+    height: 500px;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    opacity: 0.7;
+    transition: opacity 0.2s ease-out;
+}
+
+#hero-img:hover{
+    opacity: 1;
+}
+
+#hero-form > div > input[type="email"],
+#hero-form > div > input[type="submit"]{
+    height: 50px;
+}
+
+/* Header */
 
 
 
