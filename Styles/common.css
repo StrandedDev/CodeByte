@@ -39,10 +39,11 @@
     --light-font-gray: #a8a29e;
     --dark-font-gray: #57534e;
 
-    --text-mobile: 1rem;
-    --text-heading-mobile: 1.25rem;
-    --text-normal: 1rem;
-    --text-heading-normal: 1.8rem; 
+    --text-sm: 0.87rem;
+    --text-base: 1rem;
+    --text-xl: 1.25rem;
+    --text-3xl: 1.87rem;
+    --text-5xl: 3rem; 
 }
 
 *{

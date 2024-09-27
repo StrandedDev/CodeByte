@@ -57,7 +57,7 @@ nav > #nav-url-container > a{
     padding-left: 16px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: var(--text-mobile);
+    font-size: var(--text-base);
     transition: background-color 0.2s ease-out;
     border-radius: 5px;
     color: var(--dark-font-gray);
@@ -78,10 +78,10 @@ nav #nav-login-container{
 }
 
 nav #nav-login-container > .btn{
-    padding: 12px 60px;
+    padding: 12px 40px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: var(--text-sm);
     border-radius: 5px;
     background-color: var(--dark-gray);
     transition: background-color 0.2s ease-out;
@@ -163,7 +163,7 @@ header > h1{
 
 header > p{
     font-family: 'Inter', sans-serif;
-    font-size: 0.8rem;
+    font-size: var(--text-sm);
     color: var(--dark-font-gray);
 }
 
@@ -178,7 +178,7 @@ header > #hero-form{
     width: 80%;
     max-width: 450px;
     font-family: 'Inter', sans-serif;
-    font-size: 0.8rem;
+    font-size: var(--text-base);
     padding-left: 15px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -190,7 +190,7 @@ header > #hero-form{
     height: 40px;
     width: 20%;
     max-width: 120px;
-    font-size: 0.8rem;
+    font-size: var(--text-base);
     font-family: 'Inter', sans-serif;
     background-color: var(--black);
     color: var(--white);
@@ -209,9 +209,10 @@ header #hero-login-extra{
     font-family: 'Inter', sans-serif;
     color: var(--dark-font-gray);
     margin: 0;
-    padding: 15px 0;
+    padding: 25px 0;
     text-align: center;
     width: 100%;
+    font-size: var(--text-sm);
 }
 
 #hero-login-extra > .nav_btn_extra{
@@ -281,7 +282,7 @@ header #hero-login-extra{
 
     /* learn, code, compete links */
     nav > #nav-url-container > a{
-        font-size: 0.9rem;
+        font-size: var(--text-sm);
         padding: 8px 12px;
     }
 
@@ -295,7 +296,7 @@ header #hero-login-extra{
     /* login, sign up buttons */
     nav > #nav-url-container > #nav-login-container > .btn{
         padding: 8px 12px;
-        font-size: 0.9rem;
+        font-size: var(--text-base);
         font-weight: 500;
     }
 
