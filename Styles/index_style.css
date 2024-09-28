@@ -18,9 +18,8 @@ nav{
     transform: translateX(-50%);
 }
 
-
 nav > #nav-logo-container > img{
-    height: 90%;
+    height: 40px;
 }
 
 nav > #nav-icon-container > #nav-toggle-btn{
@@ -35,9 +34,9 @@ nav > #nav-icon-container > #nav-toggle-btn > i{
 nav > #nav-url-container{
     background-color: var(--full-white);
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 0px;
-    height: calc(100vh - 80px);
+    height: calc(100dvh - 60px);
     width: 100vw;
     flex-direction: column;
     align-items: center;
@@ -148,7 +147,7 @@ nav #nav-url-container #nav-login-extra > .nav_btn_extra:hover{
 
 header{
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 50px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -316,6 +315,10 @@ header #hero-login-extra{
 
 
 /* Header */
+
+header{
+    margin-top: 200px;
+}
 
 #hero-img{
     height: 500px;
